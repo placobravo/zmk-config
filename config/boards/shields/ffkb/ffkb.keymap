@@ -37,20 +37,20 @@
             >;
         };
 
-        nav_layer {
+        sym_layer {
             label = "Symbols";
             
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
             
             bindings = <
-    &kp esc    &none        &none        &none       &none         &none                                       &kp LBRC         &kp RBRC        &kp UNDER     &kp PLUS    &kp TILDE2      &kp PIPE
-    &kp tab    &none        &none        &none       &none         &none                                       &kp COLON        &kp SEMI        &kp MINUS     &kp EQUAL   &kp APOS        &kp DQT
+    &kp ESC    &none        &none        &none       &none         &none                                       &kp LBRC         &kp RBRC        &kp UNDER     &kp PLUS    &kp TILDE2      &kp PIPE
+    &kp TAB    &none        &none        &none       &none         &none                                       &kp COLON        &kp SEMI        &kp MINUS     &kp EQUAL   &kp APOS        &kp DQT
     &kp lctrl  &none        &none        &none       &none         &none                                       &kp LBKT         &kp RBKT        &kp LT        &kp GT      &kp BSLH        &kp GRAVE
                                          &kp LALT    &none         &none      &kp SPACE       &kp RSHIFT       &none            &none           &kp RALT
             >;
         };
 
-        sym_layer {
+        nums_layer {
             label = "Numbers";
             
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -63,7 +63,7 @@
             >;
         };
 
-        func_layer {
+        nav_layer {
             label = "Navigation";
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -76,7 +76,7 @@
             >;
         };
 
-        winnav_layer {
+        layers_layer {
             label = "Layers";
             
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
