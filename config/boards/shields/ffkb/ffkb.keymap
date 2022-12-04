@@ -17,12 +17,22 @@
 / {
 
     behaviors {
-        td_na: tap_dance_mod_tap {
+
+        ttl: tap_toggle_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_TOGGLE_LAYER";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <80>;
+            bindings = <&kp>, <&to>;
+        };
+    
+        td_na: tap_dance_nav_alt {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_NAV_ALT";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&lt NAV RALT>, <&kp RALT>, <&to NAV>;
+            tapping-term-ms = <100>;
+            bindings = <&mo NAV>, <&ttl RALT NAV>;
         };
     };
 
