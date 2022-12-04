@@ -22,7 +22,7 @@
             label = "TAP_DANCE_NAV_ALT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&lt NAV RALT>, <&kt RALT>; <&to NAV>;
+            bindings = <&lt NAV RALT>, <&kt RALT>, <&to NAV>;
         };
     };
 
