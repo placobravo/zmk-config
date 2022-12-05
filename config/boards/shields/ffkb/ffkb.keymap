@@ -23,7 +23,7 @@
             label = "TAP_TOGGLE_LAYER";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <120>;
+            tapping-term-ms = <200>;
             bindings = <&kp>, <&to>;
         };
     
@@ -31,7 +31,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_NAV_ALT";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             bindings = <&mo NAV>, <&ttl RALT NAV>;
         };
     };
@@ -92,7 +92,7 @@
             bindings = <
     &kp ESC    &kp F1       &kp F2       &kp F3      &kp F4        &kp F5                                      &kp F6        &kp F7       &kp F8        &kp F9      &kp F10    &kp F11
     &kp TAB    &kp CAPS     &kp PG_UP    &kp UP      &kp PG_DN     &kp PSCRN                                   &kp C_PREV    &kp C_PP     &kp C_NEXT    &none       &none      &kp F12
-    &kp LCTRL  &kp END      &kp          &kp DOWN    &kp RIGHT     &kp HOME                                    &kp C_VOL_DN  &kp C_MUTE   &kp C_VOL_UP  &none       &none      &tog NAV
+    &kp LCTRL  &kp END      &kp LEFT     &kp DOWN    &kp RIGHT     &kp HOME                                    &kp C_VOL_DN  &kp C_MUTE   &kp C_VOL_UP  &none       &none      &to DEFAULT
                                          &kp LALT    &none         &none       &kp SPACE         &kp RSHIFT    &none         &none        &kp RALT
             >;
         };
