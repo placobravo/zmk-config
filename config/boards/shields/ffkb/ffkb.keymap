@@ -23,7 +23,7 @@
             label = "TAP_TOGGLE_LAYER";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <120>;
             bindings = <&kp>, <&to>;
         };
     
@@ -31,7 +31,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_NAV_ALT";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <140>;
             bindings = <&mo NAV>, <&ttl RALT NAV>;
         };
     };
