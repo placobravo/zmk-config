@@ -23,7 +23,7 @@
             label = "TAP_TOGGLE_LAYER";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <120>;
+            tapping-term-ms = <200>;
             bindings = <&kp>, <&to>;
         };
     
