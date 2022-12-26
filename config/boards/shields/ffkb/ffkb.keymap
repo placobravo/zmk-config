@@ -8,7 +8,9 @@
 #define SYM     1
 #define NUMS    2
 #define NAV     3
-#define LAYERS  4
+#define LOL		4
+#define LOL2	5
+#define LAYERS  6
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
@@ -92,11 +94,37 @@
             bindings = <
     &kp ESC    &kp F1       &kp F2       &kp F3      &kp F4        &kp F5                                      &kp F6        &kp F7       &kp F8        &kp F9      &kp F10    &kp F11
     &kp TAB    &kp CAPS     &kp PG_UP    &kp UP      &kp PG_DN     &kp PSCRN                                   &kp C_PREV    &kp C_PP     &kp C_NEXT    &none       &none      &kp F12
-    &kp LCTRL  &kp END      &kp LEFT     &kp DOWN    &kp RIGHT     &kp HOME                                    &kp C_VOL_DN  &kp C_MUTE   &kp C_VOL_UP  &none       &none      &tog NAV
+    &kp LCTRL  &kp END      &kp LEFT     &kp DOWN    &kp RIGHT     &kp HOME                                    &kp C_VOL_DN  &kp C_MUTE   &kp C_VOL_UP  &none       &none      &to NAV
                                          &kp LALT    &kp LGUI      &kp LALT     &kp SPACE        &kp RSHIFT    &none         &none        &kp RALT
             >;
         };
 
+        lol_layer {
+            label = "LoL base";
+            
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+            
+            bindings = <
+    &kp ESC    &kp TAB        &kp N1        &kp N2       &kp N3         &kp N4                                       &none         &none        &none         &none       &none        &none
+    &none    &kp LSHIFT        &kp Q        &kp W       &kp E         &kp R                                       &none         &none        &none         &none       &none        &none
+    &none  &kp LCTRL        &kp A        &kp S       &kp D         &kp F                                       &none         &none        &none         &none       &none        &to DEFAULT
+                                         &none       &kp LALT         &mo LOL2       &kp SPACE         &none             &none         &none        &none
+            >;
+        };
+		
+        lol2_layer {
+            label = "LoL second layer";
+            
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+            
+            bindings = <
+    &none    &none        &kp F1        &kp F2       &kp F3        &kp F4                                      &none         &none        &none         &none       &none        &none
+    &none    &none        &kp P        &kp UP       &kp T         &kp G                                       &none         &none        &none         &none       &none        &none
+    &none    &kp Z        &kp LEFT        &kp DOWN       &kp RIGHT         &kp B                                       &none         &none        &none         &none       &none        &to DEFAULT
+                                         &none       &none         &none       &none         &none             &none         &none        &none
+            >;
+        };
+		
         layers_layer {
             label = "Layers";
             
@@ -109,5 +137,6 @@
                                          &none       &none         &none       &none         &none             &none         &none        &none
             >;
         };
+		
     };
 };
