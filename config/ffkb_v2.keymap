@@ -25,11 +25,6 @@
     continue-list = <UNDERSCORE MINUS>;
 };
 
-sensors {
-    compatible = "zmk,keymap-sensors";
-    sensors = <&encoder_1 &encoder_2>;
-};
-
 / {
 
     behaviors {
@@ -52,6 +47,10 @@ sensors {
         };
     };
 
+    sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&encoder_1 &encoder_2>;
+    };
 
     keymap {
         compatible = "zmk,keymap";
