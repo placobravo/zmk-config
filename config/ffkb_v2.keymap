@@ -16,9 +16,9 @@
 #define SYM     1
 #define NUMS    2
 #define NAV     3
-#define LOL	    4
-#define LOL2	5
-#define FPS	    6
+#define LOL     4
+#define LOL2    5
+#define FPS     6
 #define LAYERS  7
 
 &caps_word {
@@ -47,11 +47,6 @@
         };
     };
 
-
-    sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&encoder_1 &encoder_2>;
-    };
 
     keymap {
         compatible = "zmk,keymap";
