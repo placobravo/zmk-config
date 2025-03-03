@@ -9,5 +9,9 @@ manifest:
     #      remote: sadekbaroudi
     #      revision: main
     #      import: config/deps.yml
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
   self:
     path: config
