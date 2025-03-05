@@ -22,6 +22,7 @@
     };
 };
 
+/*
 / {
     glidepoint_input {
         compatible = "zmk,input-listener";
@@ -32,3 +33,4 @@
         x-invert;
     };
 };
+*/
