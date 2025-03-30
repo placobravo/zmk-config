@@ -1,21 +1,11 @@
 manifest:
   remotes:
-    #    - name: zmkfirmware
-    #      url-base: https://github.com/zmkfirmware
-    - name: sadekbaroudi
-      url-base: https://github.com/sadekbaroudi   
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
   projects:
-    - name: zmk-fingerpunch-keyboards
-      remote: sadekbaroudi
+    - name: zmk
+      remote: zmkfirmware
       revision: main
-      import: config/deps.yml
-    - name: zmk-fingerpunch-controllers
-      remote: sadekbaroudi
-      revision: main
-      import: config/deps.yml
-      #    - name: zmk
-      #      remote: zmkfirmware
-      #      revision: main
-      #      import: app/west.yml
+      import: app/west.yml
   self:
     path: config
