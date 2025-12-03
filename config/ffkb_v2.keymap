@@ -19,7 +19,8 @@
 #define LOL     4
 #define LOL2    5
 #define FPS     6
-#define LAYERS  7
+#define FPS2    7
+#define LAYERS  8
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
@@ -128,7 +129,7 @@
             >;
         };
 
-fps_layer {
+        fps_layer {
             label = "FPS layer";
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -137,7 +138,20 @@ fps_layer {
     &kp ESC  &kp TAB        &kp Q        &kp W       &kp E         &kp R                                       &none        &none        &none       &none       &none       &none
     &none    &kp LSHIFT     &kp A        &kp S       &kp D         &kp F                                       &none        &none        &none       &none       &none       &none
     &none    &kp LCTRL      &kp Z        &kp X       &kp C         &kp V                                       &none        &none        &none       &none       &none       &to DEFAULT
-                                         &kp LALT    &none         &kp LALT      &kp SPACE     &none           &none       &none     &none 
+                                         &none       &mo FPS2      &kp LALT      &kp SPACE        &none        &none        &none        &none 
+            >;
+        };
+
+        fps_layer2 {
+            label = "FPS second layer";
+
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+
+            bindings = <
+    &none    &none          &kp N1       &kp N2      &kp N3        &kp N4                                      &kp Y         &kp U        &kp I         &kp O       &kp P        &none
+    &none    &none          &none        &kb I       &kp T         &kp G                                       &kp H         &kp J        &kp K         &kp L       &none        &none 
+    &none    &none          &none        &kb M       &kp H         &kp B                                       &kp N         &kp M        &kp COMMA     &kp DOT     &none        &to DEFAULT
+                                         &none       &none         &none       &none              &none        &none         &none        &none 
             >;
         };
 
